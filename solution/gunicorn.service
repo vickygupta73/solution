@@ -1,0 +1,19 @@
+# gunicorn.service
+
+[Unit]
+Description=Gunicorn service for Your Django Application
+After=network.target
+
+[Service]
+User=mac
+Group=staff
+WorkingDirectory=/Users/mac/project/solution
+ExecStart=/Users/mac/project/env/bin/gunicorn -c /Users/mac/project/solution/gunicorn_config.py solution.wsgi:application
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s TERM $MAINPID
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
+

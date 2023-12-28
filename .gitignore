@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local development settings
+.env
+env/
+
+# Database
+db.sqlite3
+
+# Static files
+/staticfiles/
+
+# Media files
+/media/
+
+# Log files
+*.log
+
+# Caches
+__pycache__/
+
+# Compiled Python files
+*.pyc
+
+# Project-specific settings
+*.DS_Store
+
+# Virtual environment
+venv/
+
