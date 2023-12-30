@@ -25,7 +25,10 @@ SECRET_KEY = "django-insecure-sf+9&izojy4l$#1falz6x-&=$kuh3^wz1#v02fmn2%%zvjdtnc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ["https://*.kashvi.in.net","http://*.kashvi.in.net"]
+CSRF_ALLOWED_ORIGINS = ["https://*.kashvi.in.net","http://*.kashvi.in.net"]
+CORS_ORIGINS_WHITELIST = ["https://*.kashvi.in.net","http://*.kashvi.in.net"]
 
 
 # Application definition
