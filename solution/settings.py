@@ -26,9 +26,9 @@ SECRET_KEY = "django-insecure-sf+9&izojy4l$#1falz6x-&=$kuh3^wz1#v02fmn2%%zvjdtnc
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ["https://*.kashvi.in.net","http://*.kashvi.in.net"]
-CSRF_ALLOWED_ORIGINS = ["https://*.kashvi.in.net","http://*.kashvi.in.net"]
-CORS_ORIGINS_WHITELIST = ["https://*.kashvi.in.net","http://*.kashvi.in.net"]
+CSRF_TRUSTED_ORIGINS = ["https://*.kashvi.in.net","http://*.kashvi.in.net", "https://13.49.228.74*", "http://13.49.228.74*", "https://16.16.24.135*", "http://16.16.24.135*"]
+CSRF_ALLOWED_ORIGINS = ["https://*.kashvi.in.net","http://*.kashvi.in.net", "https://13.49.228.74*", "http://13.49.228.74*", "https://16.16.24.135*", "http://16.16.24.135*"]
+CORS_ORIGINS_WHITELIST = ["https://*.kashvi.in.net","http://*.kashvi.in.net", "https://13.49.228.74*", "http://13.49.228.74*", "https://16.16.24.135*", "http://16.16.24.135*"]
 
 
 # Application definition
